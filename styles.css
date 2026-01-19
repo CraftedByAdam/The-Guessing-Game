@@ -1,0 +1,225 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: cornsilk;
+}
+
+.navbar {
+  text-align: right;
+}
+
+#dark-light-btn {
+  background-color: transparent;
+  color:black;
+  width: 100%;
+  max-width: 170px;
+  height: auto;
+  cursor: pointer;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  transition: 0.4s ease;
+  border:solid;
+  font-size: 20px;
+  font-family: "Gravitas One", serif;
+}
+
+#dark-light-btn:active {
+  transform: translateY(3px);
+  transition: 0.2s ease;  
+}
+
+.game-container {
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Rubik Puddles", system-ui;
+  font-size: 80px;
+  color: black;
+  text-align: center;
+}
+
+#p-1 {
+  font-family: "Sriracha", cursive;
+  font-size: 40px;
+  color: black;
+  margin-top: 100px;
+}
+
+.game-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.game-card {
+  border: none;
+  border-style: solid;
+  border-width: 10px;
+  border-color: powderblue;
+  background-color: powderblue;
+  width: 85%;
+  max-width: 400px;
+  height: auto;
+  min-height: 500px;
+  text-align: center; 
+  padding: 30px 15px;
+  margin: 0 auto;
+  border-radius: 55px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  transition: 0.6s ease;
+}
+
+.game-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+  transition: 0.3s ease;
+}
+
+#user-input {
+  background-color: transparent;
+  color: darkred;
+  width: 100%;
+  max-width: 360px;
+  height: 50px;
+  font-size: 50px;
+  text-align: center;
+  border: solid;
+  border-color: black;
+  box-sizing: border-box;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#user-input:hover {
+  border: solid;
+  border-color: black;
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+
+#user-input::-webkit-inner-spin-button {
+  cursor: pointer;
+}
+
+#guess-btn {
+  background-color: crimson;
+  color: white;
+  width: 100px;
+  height: 100px;
+  font-family: "Titan One", sans-serif;
+  font-size: 27px;
+  border-radius: 100px;
+  border: none;
+  border-width: 0;
+  margin-top: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  transition: 0.5s ease;
+}
+
+#guess-btn:hover {
+  background-color: crimson;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+#guess-btn:active {
+  background-color: crimson; 
+  color: white;
+  transform: translateY(1px);
+  transition: 0.1s ease;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+#feedback-text {
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 15px;
+  color: grey;
+  margin-top: 50px;
+}
+
+#tries-text {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 70px;
+  color: firebrick;
+  margin-top: 40px;
+}
+
+#reset-btn {
+  background-color: crimson;
+  color: white;
+  width: 120px;
+  height: auto;
+  font-family: "VT323", monospace;
+  font-size: 30px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  transition: 0.2s ease;
+  border-radius: 5px;
+}
+
+#reset-btn:hover {
+  background-color: crimson;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  transition: 0.2s ease;
+}
+
+#reset-btn:active {
+  background-color: crimson; 
+  color: white;
+  transform: translateY(1px);
+  transition: 0.1s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+  
+  #p-1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .game-card {
+    height: auto;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    text-align: center;
+  }
+
+  #dark-light-btn {
+    width: 100%;
+    max-width: 150px; 
+    height: auto;
+    font-size: 15px;
+  }
+
+  #user-input {
+    width: 100%;
+    font-size: 30px; 
+  }
+
+  #guess-btn, #reset-btn {
+    transition: 0.3s ease;
+  }
+  
+  #guess-btn:active, #reset-btn:active {
+    transform: translateY(5px) scale(0.95);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+  }
+}
