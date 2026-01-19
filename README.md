@@ -26,4 +26,5 @@ This was my first real project in my coding journey. I learned:
 1. Enter a number between 1 and 100.
 2. Click "Press" to submit your guess.
 3. Use the feedback to adjust your next guess.
+
 4. Try to win before you run out of 7 tries!
